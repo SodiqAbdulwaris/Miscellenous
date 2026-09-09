@@ -1,0 +1,26 @@
+[project]
+name = "miscellenous"
+version = "0.1.0"
+description = "A collection of small, standalone Python utilities"
+readme = "README.md"
+authors = [
+    { name = "Sodiq Abdulwaris", email = "sodiqabdulwaris@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "opencv-python-headless",
+    "PyMuPDF",
+    "numpy",
+    "pyzbar",
+    "pypdfium2",
+    "pillow",
+    "qrcode",
+    "nfcpy",
+]
+
+[project.scripts]
+miscellenous = "miscellenous:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
